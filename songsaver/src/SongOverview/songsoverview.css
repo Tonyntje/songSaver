@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #282c34;
+  width: 100%;
+}
+
+.overcontainer {
+  width: 100%;
+}
+
+.overcontainer .actions {
+  width: calc(100% - $base-padding);
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.overcontainer input,
+.overcontainer button {
+  width: calc(19% - 25px);
+}
+
+.overcontainer input[type="text"] {
+  height: 30px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.overcontainer button {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  -webkit-transition: background-color .15s ease-in;
+  transition: background-color .15s ease-in;
+}
+
+.overcontainer button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/*# sourceMappingURL=songsoverview.css.map */

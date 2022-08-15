@@ -1,0 +1,52 @@
+$base-padding: 1.5rem;
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #282c34;
+    width: 100%;
+}
+
+.overcontainer {
+    width: 100%;
+
+    .actions {
+        width: calc(100% - $base-padding);
+        padding: $base-padding;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.1)
+    }
+
+    input,
+    button {
+        width: calc(19% - 25px);
+    }
+
+    input[type="text"] {
+        height: 30px;
+        padding: 0 15px;
+        border: none;
+        border-radius: 3px;
+        font-weight: 500;
+    }
+
+    button {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+        font-weight: 500;
+        transition: background-color .15s ease-in;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+
+}
