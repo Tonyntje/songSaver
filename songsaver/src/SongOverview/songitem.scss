@@ -1,0 +1,44 @@
+.song-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 150px;
+    width: calc(100% - 5rem);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin: 1rem 1rem 0;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+
+    .songname {
+        font-weight: 700;
+    }
+
+    .song-actions {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid #333;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: underline;
+        color: #fff;
+        text-align: center;
+        transition: background ease-in .15s;
+
+        &::selection {
+            background: none;
+        }
+
+        * {
+            &::selection {
+                background: none;
+            }
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+        }
+    }
+}

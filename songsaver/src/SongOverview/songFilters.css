@@ -1,0 +1,75 @@
+.app-filters {
+  padding: 0.6rem 1.5rem;
+  background: rgba(255, 255, 255, 0.734);
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 0 20px;
+}
+
+.app-filters .filter {
+  border-radius: 50px;
+  border: solid 1px #eee;
+  padding: 2px 20px 2px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  border: 2px solid #fff;
+  font-weight: 800;
+  background: #fff;
+  color: #000;
+  -webkit-transition: .15s ease-in border;
+  transition: .15s ease-in border;
+}
+
+.app-filters .filter::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.app-filters .filter.asc::before {
+  background-image: url(../icons/arrow-up-z-a-solid.svg);
+}
+
+.app-filters .filter.dsc::before {
+  background-image: url(../icons/arrow-down-z-a-solid.svg);
+}
+
+.app-filters .filter.asc.ratings::before {
+  background-image: url(../icons/arrow-up-short-wide-solid.svg);
+}
+
+.app-filters .filter.dsc.ratings::before {
+  background-image: url(../icons/arrow-down-short-wide-solid.svg);
+}
+
+.app-filters .filter:hover {
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.app-filters h4 {
+  font-weight: 900;
+}
+/*# sourceMappingURL=songFilters.css.map */
