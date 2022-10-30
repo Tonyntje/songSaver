@@ -1,0 +1,36 @@
+.error-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.error-page div {
+  text-align: center;
+  line-height: 28px;
+}
+
+.error-page div h1,
+.error-page div p {
+  margin-bottom: 1.5rem;
+}
+
+.error-page div h1 i,
+.error-page div p i {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.error-page div h1 a,
+.error-page div p a {
+  color: #fff;
+}
+/*# sourceMappingURL=errorPage.css.map */

@@ -6,8 +6,8 @@ export default function NavMenu() {
     return (
         <div className='nav-menu'>
             <div className='pfp'>
-                <a href="https://github.com/Tonyntje" target="_blank">
-                    <img src="https://i.pinimg.com/736x/7c/ce/af/7cceaf0ccc8303837e6acb7c215a0ee1.jpg" />
+                <a href="https://github.com/Tonyntje" target="_blank" rel="noreferrer">
+                    <img alt="tony profile" src="https://i.pinimg.com/736x/7c/ce/af/7cceaf0ccc8303837e6acb7c215a0ee1.jpg" />
                 </a>
             </div>
             <nav>
