@@ -11,7 +11,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-gap: 0 20px;
+  grid-gap: 10px 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% - $base-padding);
 }
 
 .app-filters .filter {

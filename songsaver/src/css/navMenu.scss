@@ -1,0 +1,45 @@
+@import './constants';
+
+.nav-menu {
+    display: flex;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        max-width: 70px;
+        border-radius: 600px;
+        box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.2);
+        border: 1px solid #fff;
+        transition: ease-in .15s transform;
+        transform: rotate(0deg);
+
+        &:hover {
+            transform: rotate(5deg);
+            cursor: pointer;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: $base-padding;
+
+        a {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 7px 30px;
+            border-radius: 5px;
+            transition: background ease-in .15s;
+            font-size: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+}

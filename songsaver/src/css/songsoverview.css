@@ -12,7 +12,8 @@ body {
 }
 
 .overcontainer {
-  width: 100%;
+  width: calc(100% - 3rem);
+  padding: 1.5rem;
 }
 
 .overcontainer .actions {

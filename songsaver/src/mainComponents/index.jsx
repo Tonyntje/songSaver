@@ -1,20 +1,19 @@
-
 import { useSelector, useDispatch } from "react-redux"
 import { addSong } from "../actions"
 import SongFilters from "./SongFilters"
 import GenreList from "./GenreList"
-import './songsoverview.css'
+import '../css/songsoverview.css'
 
 const setStars = starValue => {
     const ratingField = document.querySelector('#rating')
     ratingField.value = starValue
-    const stars =  Array.from( document.querySelectorAll('.stars .star') )
-    stars.forEach( star => star.classList.remove('active') )
-    for(let i = 0; i < starValue; i++) 
+    const stars = Array.from(document.querySelectorAll('.stars .star'))
+    stars.forEach(star => star.classList.remove('active'))
+    for (let i = 0; i < starValue; i++)
         stars[i].classList.add('active')
 }
 
-function SongsOverview() {  
+function SongsOverview() {
     const songs = useSelector(state => state.songList)
     const dispatch = useDispatch();
 
@@ -46,11 +45,11 @@ function SongsOverview() {
                     ))
                 }}>Add to Songs</button>
             </div>
-            
 
-            {(songs.length)? <SongFilters /> : '' } 
+
+            {(songs.length) ? <SongFilters /> : ''}
             <div className="list">
-                { uniqueGenres.map(genre => <GenreList key={genre} datagenre={genre} /> )}
+                {uniqueGenres.map(genre => <GenreList key={genre} datagenre={genre} />)}
             </div>
         </div>
     )
