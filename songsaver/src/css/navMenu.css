@@ -1,0 +1,60 @@
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-menu img {
+  max-width: 70px;
+  border-radius: 600px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  -webkit-transition: ease-in .15s transform;
+  transition: ease-in .15s transform;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.nav-menu img:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  cursor: pointer;
+}
+
+.nav-menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 1.5rem;
+}
+
+.nav-menu nav a {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 7px 30px;
+  border-radius: 5px;
+  -webkit-transition: background ease-in .15s;
+  transition: background ease-in .15s;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.nav-menu nav a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+/*# sourceMappingURL=navMenu.css.map */

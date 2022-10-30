@@ -14,7 +14,8 @@ body {
 }
 
 .overcontainer {
-    width: 100%;
+    width: calc(100% - 3rem);
+    padding: $base-padding;
 
     .actions {
         width: calc(100% - $base-padding);

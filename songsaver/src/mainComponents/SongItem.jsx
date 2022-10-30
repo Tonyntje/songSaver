@@ -1,7 +1,7 @@
 
 import { useDispatch } from 'react-redux';
 import { deleteSong } from "../actions";
-import './songitem.css'
+import '../css/songitem.css'
 
 function SongItem(props) {
     const prop = props.songData
@@ -12,7 +12,7 @@ function SongItem(props) {
             <div className="artist">{prop.artist}</div>
             <div className="genre">{prop.genre}</div>
             <div className="rating">{prop.rating}</div>
-            <div className='song-actions' onClick={() => dispatch(deleteSong( {id: props.songid }))}>
+            <div className='song-actions' onClick={() => dispatch(deleteSong({ id: props.songid }))}>
                 <div className='action-delete'>delete song</div>
             </div>
         </div>
