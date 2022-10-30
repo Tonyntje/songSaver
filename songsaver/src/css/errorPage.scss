@@ -1,0 +1,27 @@
+.error-page {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    div {
+        text-align: center;
+        line-height: 28px;
+
+        h1,
+        p {
+            margin-bottom: 1.5rem;
+
+            i {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 5px 20px;
+                border-radius: 5px;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
